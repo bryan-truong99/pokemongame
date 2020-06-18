@@ -8,6 +8,7 @@ public class pokemon
 {
     //Instance Variables
     private int pokedexNum;
+    private String name;
     private int health;
     private int attack;
     private int defense;
@@ -20,11 +21,12 @@ public class pokemon
     private move moveslot4;
 
     //Pokemon constructor
-    public Pokemon(int pNum, int health, int attack, int defense,
+    public Pokemon(int pNum, String name, int health, int attack, int defense,
             int spAtt, int spDef, int speed, move move1, move move2, move move3,
             move move4)
     {
         this.pokedexNum = pNum;
+        this.name = name;
         this.health = health;
         this.attack = attack;
         this.defense = defense;
@@ -45,6 +47,16 @@ public class pokemon
     public int getPokedexNum()
     {
         return this.pokedexNum;
+    }
+
+    /**
+     * Returns name of Pokemon
+     *
+     * @return String - Pokemon name
+     */
+    public String getName()
+    {
+        return this.name;
     }
 
     /**

@@ -8,14 +8,16 @@ public class move
     int basePower;
     int pp;
     String description;
+    boolean isPhysical;
 
     //Constructor
-    public move(String name, int bp, int pp, String des)
+    public move(String name, int bp, int pp, String des, isPhysical)
     {
         this.name = name;
         this.basePower = bp;
         this.pp = pp;
         this.description = des;
+        this.isPhysical = isPhysical;
     }
 
     //Returns name
@@ -40,6 +42,12 @@ public class move
     public int getDescription()
     {
         return this.description;
+    }
+
+    //Returns if the move if physical 
+    public boolean getPhys()
+    {
+        return this.isPhysical;
     }
 }
 
